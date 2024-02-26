@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structure Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Structure Visualizer (Stack and Queue)</h1>
+        <div class="select-container">
+            <select id="dataStructureSelect" onchange="selectDataStructure()">
+                <option value="stack">Stack</option>
+                <option value="queue">Queue</option>
+            </select>
+        </div>
+        <div class="data-structure">
+            <input type="text" id="dataInput" placeholder="Enter value">
+            <button onclick="push()">Push/Enqueue</button>
+            <button onclick="pop()">Pop/Dequeue</button>
+            <div id="dataDisplay"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
